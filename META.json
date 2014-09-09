@@ -22,7 +22,8 @@
    "prereqs" : {
       "build" : {
          "requires" : {
-            "ExtUtils::MakeMaker" : "6.46"
+            "ExtUtils::MakeMaker" : "6.46",
+            "File::FindLib" : "0"
          }
       },
       "configure" : {
@@ -43,5 +44,5 @@
          "url" : "http://github.com/dshadow/mojolicious-plugin-cbor"
       }
    },
-   "version" : "0.02"
+   "version" : "0.03"
 }

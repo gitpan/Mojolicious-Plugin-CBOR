@@ -14,6 +14,7 @@ WriteMakefile(
 	},
 	BUILD_REQUIRES	=> {
 		'ExtUtils::MakeMaker'	=> '6.46',
+		'File::FindLib'			=> 0,
 	},
 	META_MERGE => {
 		resources => {

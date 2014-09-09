@@ -3,7 +3,7 @@ package Mojolicious::Plugin::CBOR;
 use Mojo::Base 'Mojolicious::Plugin';
 use CBOR::XS;
 
-our $VERSION = '0.02';
+our $VERSION = '0.03';
 
 sub register
 {
