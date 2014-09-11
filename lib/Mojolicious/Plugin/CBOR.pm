@@ -3,7 +3,7 @@ package Mojolicious::Plugin::CBOR;
 use Mojo::Base 'Mojolicious::Plugin';
 use CBOR::XS;
 
-our $VERSION = '0.03';
+our $VERSION = '0.04';
 
 sub register
 {
@@ -42,11 +42,11 @@ Mojolicious::Plugin::CBOR - render a CBOR response with Mojolicious
 	plugin 'CBOR';
 
 	# In controller
-	$self->render(pack => $data, handler => 'cbor');
+	$self->render(cbor => $data, handler => 'cbor');
 
 =head1 DESCRIPTION
 
-L<Mojolicious::Plugin::CBOR> is a L<Mojolicious> plugin that packs any data you send to the 'pack' parameter with L<CBOR::XS> and renders it.
+L<Mojolicious::Plugin::CBOR> is a L<Mojolicious> plugin that packs any data you send to the 'cbor' parameter with L<CBOR::XS> and renders it.
 
 The "Content-Type" header sent in the response will be set to "application/cbor; charset=UTF-8".
 

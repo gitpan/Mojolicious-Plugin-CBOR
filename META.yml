@@ -23,4 +23,4 @@ requires:
   Mojolicious: '5.31'
 resources:
   repository: http://github.com/dshadow/mojolicious-plugin-cbor
-version: '0.03'
+version: '0.04'
